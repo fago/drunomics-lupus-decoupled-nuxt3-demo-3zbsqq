@@ -5,12 +5,10 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  title: {
-    type: String,
-    required: true
-  },
-  body: String
-})
+<script setup lang="ts">
+const props = defineProps<{
+  title: String;
+  type: String;
+  body?: String;
+}>();
 </script>
